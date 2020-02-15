@@ -8,7 +8,7 @@ function BookCard(props) {
     return (
         <div>
             <Card key={props._id}>
-                <CardImg top width="100%" src={props.img} alt="Book Img" />
+                <CardImg top width="100%" src={props.img} alt="Book Img" style={{ maxHeight: 300 }} />
                 <CardBody>
                     <CardTitle><a href={props.link}>{props.title}</a></CardTitle>
                     <CardSubtitle>{props.author}</CardSubtitle>
